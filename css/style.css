@@ -1,0 +1,536 @@
+@font-face {
+  font-family: 'Pacifico';
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto, 'san-serif';
+  letter-spacing: .1rem;
+}
+
+.bg-color {
+  background-color: #E5E5E5;;
+}
+
+.web-positioning {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* HEADER SECTION PAGE */
+.heading-page {
+  height: 8.313rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.text-logo h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #0A3871;
+}
+
+/* BODY SECTION PAGE */
+.body-parts { 
+  height: 75rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.section-text{
+  height: 60rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ENCRIPTER PART*/
+.text-entry #encriptador{
+  width: 90%;
+  height: 45rem;
+  
+  border: none;
+  outline: none;
+  resize: none;
+  overflow:auto;
+
+  padding-top: 4rem;
+  padding-left: 6rem;
+
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #0A3871;
+  background: #E5E5E5;
+}
+
+.text-entry .areaTexto::placeholder{
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #0a38716e;
+}
+
+.show-image{
+  width: 35rem;
+  height: 60rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.show-image img{
+  width: 26rem;
+}
+
+.show-image hgroup h3{
+  padding-top: 2rem;
+  letter-spacing: .050rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #343a40;
+}
+
+.show-image p{
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  line-height: 1.3;
+  letter-spacing: .021rem;
+  text-align: center;
+  color: #868e96;
+}
+
+.show-message{
+  width: 35rem;
+  height: 60rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+
+  
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.show-message .input--text{
+  width: 100%;
+  max-height: 25%;
+  padding: 0 1rem;
+  /* overflow: auto; */
+}
+
+.show-message .input--text textarea{
+  font-size: 1.8rem;
+  color: #0A3871;
+  line-height: 1.5;
+}
+
+#text-input{
+  width: 100%;
+  height: 47rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+#text-input::placeholder{
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #0a38716e;
+}
+
+.hidden {
+  display: none;
+}
+
+.encripter--main {
+  display: flex;
+  flex-direction: column;
+}
+
+.encripter-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-warn{
+  width: 2rem;
+  stroke: #0A3871;
+}
+
+.encripter-info p {
+  padding: .8rem 0;
+  padding-left: .4rem;
+
+  font-size: 1.2rem;
+  padding-top: .4rem;
+  line-height: 1.2;
+  letter-spacing: .020rem;
+  text-align: center;
+  color: #868e96;
+}
+
+.btn {
+  font-size: 1.6rem;
+  background: none;
+  color: #0A3871;
+  padding: 1.5rem 10rem;
+  border: .1rem solid #0A3871;
+  cursor: pointer;
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.btn:hover{
+  color: white;
+  background: #0A3871;
+
+}
+
+.encripter-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.encripter-buttons .btn-primary{
+  background: #0a3871;
+  color: white;
+  
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.encripter-buttons .btn-primary:hover{
+  background: #2e6ab3;
+}
+
+/* PIE DE PAGINA */
+
+.footer{
+  height: 8.313rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p{
+ font-size: 1.2rem; 
+}
+
+.icon-gith{
+  width: 2rem;
+  height: auto;
+  fill: #0A3871;
+}
+
+.btn-footer{
+  padding: .50rem 1.50rem;
+  border: .1rem solid #0a387146;
+}
+
+
+.btn-footer,
+.btn-footer a:link{
+  text-decoration: none;
+  color: #343a40;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.btn-footer:hover span,
+.btn-footer:hover a:link,
+.btn-footer:hover a:active,
+.btn-footer:hover .icon-gith{
+  color: white;
+  fill: white;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:1200px) {
+  
+  .show-message{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .show-image{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:927px) {
+  
+  .show-message{
+    width: 30rem;
+    height: 60rem;
+    padding: 1.5rem;
+  }
+
+  .show-message .input--text{
+    width: 100%;
+    max-height: 45%;
+    padding: 0 1rem;
+    /* overflow: auto; */
+  }
+  
+  .show-message .input--text p{
+    font-size: 1.6rem;
+    color: #0A3871;
+    line-height: 1.5;
+  }
+
+  .show-message{
+    width: 30rem;
+    height: 60rem;
+    padding: 1.5rem;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    background: none;
+    color: #0A3871;
+    padding: 1.5rem 5rem;
+    border: .1rem solid #0A3871;
+    cursor: pointer;
+  }
+
+  .btn-footer{
+    padding: .50rem 1.50rem;
+    border: .1rem solid #0a387146;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  
+  .web-positioning {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .body-parts { 
+    height: 64rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section-text{
+    height: 50rem;
+  }
+
+    /* ENCRIPTER PART*/
+  .text-entry #encriptador{
+    width: 90%;
+    height: 30rem;
+
+    padding-top: 4rem;
+    padding-left: 2rem;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #0A3871;
+    background: #E5E5E5;
+  }
+
+  .text-entry .areaTexto::placeholder{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #0a38716e;
+  }
+
+  .show-message{
+    width: 100%;
+    max-height: 30rem;
+    padding: 1.5rem;
+  }
+
+  #text-input{
+    height: 20rem;
+  }
+
+  .show-image{
+    width: 100%;
+    height: 16rem;
+    padding: 2rem 2rem;
+    
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+  .show-image img{
+    display: none;
+  }
+
+  .encripter-info{
+    margin-top: 2rem;
+  }
+
+  .btn {
+    padding: 1.5rem 4rem;
+  }
+
+  .encripter-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .input--text{
+    margin-bottom: 2rem;
+  }
+
+  .footer{
+    margin-top: 1rem;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn-footer{
+    padding: .50rem 1.50rem;
+    border: .1rem solid #0a387146;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+
+  .web-positioning {
+    gap: 14rem;
+  }
+
+  .show-message {
+    width: 100%;
+    max-height: 40rem;
+    padding: 1.5rem;
+  }
+  .text-entry #encriptador {
+    gap: 5rem;
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .show-message .input--text{
+    width: 100%;
+    max-height: 73%;
+    padding: 0 1rem;
+  }
+
+  #text-input{
+    height: 20rem;
+  }
+
+  .encripter-buttons{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .btn {
+    padding: 2rem 8rem;
+  }
+
+  .btn-secondary {
+    width: 24rem;
+    padding: 2rem 0;
+  }
+
+  .btn-footer{
+    padding: .50rem 1.50rem;
+    border: .1rem solid #0a387146;
+  }
+
+
+}
+
+
+
