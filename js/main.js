@@ -33,6 +33,9 @@ const Encrypt = function(e){
       .replaceAll(/ai/gm, "a")
       .replaceAll(/ober/gm, "o")
       .replaceAll(/ufat/gm, "u");
+      
+      infoWishoutImg.classList.remove("hidden");
+      infoWithImg.classList.add("hidden");
 
       InputText.value = simpleText;
     } else {
